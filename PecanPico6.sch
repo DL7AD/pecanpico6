@@ -8969,11 +8969,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="RXD" class="0">
 <segment>
-<pinref part="SJ1" gate="1" pin="2"/>
-<wire x1="358.14" y1="53.34" x2="363.22" y2="53.34" width="0.1524" layer="91"/>
-<label x="363.22" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <label x="370.84" y="236.22" size="1.27" layer="95" xref="yes"/>
 <wire x1="365.76" y1="236.22" x2="370.84" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="PIO1_6/RXD/CT32B0_MAT0"/>
@@ -8983,13 +8978,13 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="287.02" y1="134.62" x2="279.4" y2="134.62" width="0.1524" layer="91"/>
 <label x="279.4" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="TXD" class="0">
 <segment>
 <pinref part="SJ2" gate="1" pin="2"/>
 <wire x1="358.14" y1="48.26" x2="363.22" y2="48.26" width="0.1524" layer="91"/>
 <label x="363.22" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="TXD" class="0">
 <segment>
 <wire x1="365.76" y1="233.68" x2="370.84" y2="233.68" width="0.1524" layer="91"/>
 <label x="370.84" y="233.68" size="1.27" layer="95" xref="yes"/>
@@ -8999,6 +8994,11 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="UART" gate="G$1" pin="1"/>
 <wire x1="287.02" y1="137.16" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
 <label x="279.4" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="1" pin="2"/>
+<wire x1="358.14" y1="53.34" x2="363.22" y2="53.34" width="0.1524" layer="91"/>
+<label x="363.22" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
