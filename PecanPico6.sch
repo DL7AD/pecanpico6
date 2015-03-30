@@ -7920,7 +7920,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.1524" drill="0.3">
+<class number="0" name="default" width="0.15" drill="0.3">
 <clearance class="0" value="0.1524"/>
 </class>
 <class number="1" name="vcc" width="0.254" drill="0.3">
@@ -8041,12 +8041,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="LED1" library="SparkFun" deviceset="LED" device="0603" value="green">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
-<part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="C27" library="sven" deviceset="CAP-0402" device="" value="4.7pF"/>
 <part name="C12" library="sven" deviceset="CAP-0805" device="" value="22uF"/>
 <part name="L2" library="sven" deviceset="IND-0402" device="" value="68nH"/>
@@ -8068,7 +8062,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C16" library="sven" deviceset="CAP-0402" device="" value="100nF"/>
 <part name="C15" library="sven" deviceset="CAP-0402" device="" value="100pF"/>
 <part name="C1" library="sven" deviceset="CAP-0603" device="" value="2.2uF"/>
-<part name="R14" library="sven" deviceset="RES-0402" device="" value="1k"/>
 <part name="R5" library="sven" deviceset="RES-0402" device="" value="1k"/>
 <part name="C22" library="sven" deviceset="CAP-0402" device="" value="100pF"/>
 <part name="C24" library="sven" deviceset="CAP-0402" device="" value="100pF"/>
@@ -8129,6 +8122,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R13" library="sven" deviceset="RES-0402" device="" value="1k"/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="ava" deviceset="JTI_ANTENNA-1575AT43A40" device=""/>
+<part name="SJ7" library="jumper" deviceset="SJ2W" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8274,12 +8268,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND7" gate="1" x="447.04" y="127"/>
 <instance part="P+5" gate="G$1" x="441.96" y="165.1"/>
 <instance part="GND9" gate="1" x="441.96" y="127"/>
-<instance part="LED1" gate="G$1" x="251.46" y="203.2" rot="R180">
-<attribute name="OC_NEWARK" x="251.46" y="203.2" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="251.46" y="203.2" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="251.46" y="203.2" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="GND17" gate="1" x="251.46" y="226.06" rot="R180"/>
 <instance part="C27" gate="G$1" x="99.06" y="111.76" rot="R90"/>
 <instance part="C12" gate="G$1" x="317.5" y="302.26"/>
 <instance part="L2" gate="G$1" x="20.32" y="111.76"/>
@@ -8301,10 +8289,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C16" gate="G$1" x="167.64" y="53.34" rot="R90"/>
 <instance part="C15" gate="G$1" x="167.64" y="63.5" rot="R90"/>
 <instance part="C1" gate="G$1" x="116.84" y="276.86"/>
-<instance part="R14" gate="G$1" x="251.46" y="215.9" rot="R90"/>
 <instance part="R5" gate="G$1" x="363.22" y="58.42"/>
 <instance part="C22" gate="G$1" x="228.6" y="175.26" rot="R270"/>
-<instance part="C24" gate="G$1" x="208.28" y="170.18"/>
+<instance part="C24" gate="G$1" x="200.66" y="175.26" rot="R270"/>
 <instance part="C18" gate="G$1" x="210.82" y="246.38" rot="R270"/>
 <instance part="C19" gate="G$1" x="228.6" y="236.22" rot="R180"/>
 <instance part="C21" gate="G$1" x="228.6" y="193.04" rot="R180"/>
@@ -8362,6 +8349,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="R13" gate="G$1" x="177.8" y="187.96" rot="R270"/>
 <instance part="GND39" gate="1" x="177.8" y="198.12" rot="R180"/>
 <instance part="U$3" gate="G$1" x="284.48" y="93.98" rot="R90"/>
+<instance part="SJ7" gate="G$1" x="205.74" y="165.1" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8538,11 +8526,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="441.96" y1="129.54" x2="441.96" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="251.46" y1="220.98" x2="251.46" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND25" gate="1" pin="GND"/>
@@ -8935,18 +8918,11 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="VCXO" gate="G$1" pin="OUT"/>
 <wire x1="208.28" y1="182.88" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="175.26" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
 <junction x="208.28" y="175.26"/>
 <wire x1="208.28" y1="175.26" x2="223.52" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="C22" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="16_XOUT"/>
-<wire x1="208.28" y1="165.1" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C24" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GPS_RESET" class="0">
@@ -9356,13 +9332,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="370.84" y="228.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="251.46" y1="208.28" x2="251.46" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="ADC_VSOL" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -9448,14 +9417,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="228.6" y1="187.96" x2="228.6" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="187.96" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
 <junction x="228.6" y="187.96"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="IC4" gate="G$1" pin="PIO0_2/SSEL0/CT16B0_CAP0"/>
-<wire x1="251.46" y1="200.66" x2="251.46" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="198.12" x2="279.4" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C_PULL_VCC" class="0">
@@ -9556,6 +9517,43 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="177.8" y1="182.88" x2="177.8" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="IRQ" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="11_NIRQ"/>
+<wire x1="238.76" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
+<label x="243.84" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="PIO0_2/SSEL0/CT16B0_CAP0"/>
+<wire x1="279.4" y1="198.12" x2="274.32" y2="198.12" width="0.1524" layer="91"/>
+<label x="274.32" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="175.26" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="SJ7" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="175.26" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="SJ7" gate="G$1" pin="3"/>
+<pinref part="IC2" gate="G$1" pin="17_XIN"/>
+<wire x1="200.66" y1="165.1" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="SJ7" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="165.1" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="16_XOUT"/>
+<wire x1="208.28" y1="160.02" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
