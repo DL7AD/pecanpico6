@@ -129,7 +129,7 @@
 <wire x1="50.1" y1="8.7" x2="50.1" y2="20.7" width="0" layer="20"/>
 <wire x1="50.1" y1="20.7" x2="1.4" y2="20.7" width="0" layer="20"/>
 <wire x1="1.4" y1="20.7" x2="1.4" y2="8.7" width="0" layer="20"/>
-<text x="19.3" y="22.3" size="0.5" layer="1">Version 14. July 2015</text>
+<text x="19.3" y="22.3" size="0.5" layer="1">Version 16. July 2015</text>
 </plain>
 <libraries>
 <library name="KT5TK">
