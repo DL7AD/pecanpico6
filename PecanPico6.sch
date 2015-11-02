@@ -6983,10 +6983,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-1.2" y="-1.4" size="0.2" layer="27">&gt;VALUE</text>
 </package>
 <package name="ANTENNAPAD">
+<smd name="ANT" x="0" y="0" dx="2" dy="2" layer="1" thermals="no" cream="no"/>
 <smd name="GND1" x="-3.6" y="0" dx="4.2" dy="2" layer="1" thermals="no" cream="no"/>
 <smd name="GND2" x="3.6" y="0" dx="4.2" dy="2" layer="1" thermals="no" cream="no"/>
-<smd name="ANT" x="0" y="0" dx="2" dy="2" layer="1" thermals="no" cream="no"/>
-<smd name="GND3" x="0" y="0" dx="11.4" dy="2" layer="16" thermals="no" cream="no"/>
+<smd name="GND3" x="0.5" y="0" dx="10.4" dy="2" layer="16" thermals="no" cream="no"/>
 </package>
 <package name="SOT65P210X110-5N">
 <smd name="1" x="-0.9" y="0.6604" dx="0.8" dy="0.4" layer="1"/>
@@ -7213,18 +7213,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="ANTENNAPAD">
+<circle x="0" y="68.58" radius="38.1" width="0.254" layer="98"/>
+<rectangle x1="-1.905" y1="12.7" x2="1.905" y2="13.97" layer="94"/>
 <wire x1="0" y1="-10.16" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="0" y1="-7.62" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="12.7" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-7.62" x2="-1.27" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="-7.62" x2="1.27" y2="-10.16" width="0.254" layer="94"/>
-<rectangle x1="-1.905" y1="12.7" x2="1.905" y2="13.97" layer="94"/>
 <wire x1="-68.58" y1="-71.12" x2="73.66" y2="-71.12" width="0.254" layer="94" curve="-63.215004"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="97"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="20.32" width="0.254" layer="97"/>
@@ -7232,7 +7232,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="0" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="97"/>
 <wire x1="-5.08" y1="20.32" x2="-5.08" y2="-5.08" width="0.254" layer="97"/>
 <wire x1="0" y1="20.32" x2="0" y2="30.48" width="0.254" layer="97"/>
-<circle x="0" y="68.58" radius="38.1" width="0.254" layer="98"/>
 <wire x1="-65.024" y1="-68.834" x2="-67.818" y2="-63.5" width="0.254" layer="94"/>
 <wire x1="-69.088" y1="-64.262" x2="-66.548" y2="-65.786" width="0.254" layer="94"/>
 <wire x1="-66.548" y1="-65.786" x2="-66.294" y2="-62.992" width="0.254" layer="94"/>
@@ -7242,11 +7241,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="27.94" y1="-49.53" x2="30.226" y2="-47.498" width="0.254" layer="94"/>
 <wire x1="-2.286" y1="-10.668" x2="-65.532" y2="-62.484" width="0.254" layer="98"/>
 <wire x1="2.032" y1="-11.176" x2="26.67" y2="-45.72" width="0.254" layer="98"/>
-<pin name="GND2" x="10.16" y="2.54" visible="off" length="middle" rot="R180"/>
-<pin name="GND3" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 <pin name="ANT" x="10.16" y="-2.54" visible="off" length="middle" rot="R180"/>
 <pin name="GND1" x="10.16" y="5.08" visible="off" length="middle" rot="R180"/>
-<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND2" x="10.16" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="GND3" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
 </symbol>
 <symbol name="TPS79718DCKT">
 <pin name="IN" x="-17.78" y="2.54" length="middle" direction="pwr"/>
@@ -8172,6 +8171,11 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
+<part name="JP6" library="sven" deviceset="M01" device="SOLAR">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -8603,6 +8607,11 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="OC_NEWARK" x="276.86" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="276.86" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="276.86" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JP6" gate="G$1" x="297.18" y="332.74">
+<attribute name="OC_NEWARK" x="297.18" y="332.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="297.18" y="332.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="297.18" y="332.74" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
