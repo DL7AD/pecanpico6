@@ -2286,11 +2286,11 @@ design rules under a new name.</description>
 <wire x1="12.4022375" y1="10.6" x2="10.2" y2="10.6" width="0.5" layer="1"/>
 <via x="10.2" y="10.6" extent="1-16" drill="0.3"/>
 <wire x1="10.2" y1="10.6" x2="7.7" y2="10.6" width="0.5" layer="16"/>
-<wire x1="7.7" y1="10.6" x2="7.1" y2="11.2" width="0.5" layer="16"/>
-<wire x1="7.1" y1="11.2" x2="6" y2="11.2" width="0.5" layer="16"/>
-<wire x1="6" y1="11.2" x2="3.9" y2="9.1" width="0.5" layer="16"/>
-<wire x1="3.9" y1="9.1" x2="1.7" y2="9.1" width="0.5" layer="16"/>
-<wire x1="1.7" y1="9.1" x2="0.4" y2="10.4" width="0.5" layer="16"/>
+<wire x1="7.7" y1="10.6" x2="7" y2="11.3" width="0.5" layer="16"/>
+<wire x1="7" y1="11.3" x2="6" y2="11.3" width="0.5" layer="16"/>
+<wire x1="6" y1="11.3" x2="3.95" y2="9.15" width="0.5" layer="16"/>
+<wire x1="3.95" y1="9.15" x2="1.65" y2="9.15" width="0.5" layer="16"/>
+<wire x1="1.65" y1="9.15" x2="0.4" y2="10.4" width="0.5" layer="16"/>
 <via x="0.4" y="10.4" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="N$36">
@@ -3188,6 +3188,7 @@ design rules under a new name.</description>
 <approved hash="5,16,09b5c2866857ec38"/>
 <approved hash="19,16,1fdb2874a6089c0f"/>
 <approved hash="5,16,0f29853f83e70d41"/>
+<approved hash="11,1,6167f651080e9f38"/>
 <approved hash="19,1,025c6efdb1cf7d62"/>
 <approved hash="19,16,cae988020ad844eb"/>
 <approved hash="5,16,02e1051323a3df2f"/>
@@ -3198,14 +3199,14 @@ design rules under a new name.</description>
 <approved hash="5,16,3d97811187e53fc3"/>
 <approved hash="19,16,f5c6c9ef4be77a1e"/>
 <approved hash="19,16,cfaaf70b74fb41fa"/>
-<approved hash="19,16,e2fd7f48f1446121"/>
-<approved hash="5,16,f47f830982e5f643"/>
 <approved hash="19,16,d9194054cfa05b4d"/>
 <approved hash="5,16,f0b784b182e5f243"/>
+<approved hash="19,16,e2fd7f48f1446121"/>
+<approved hash="5,16,f47f830982e5f643"/>
 <approved hash="5,16,76e9e53fe4e774c1"/>
 <approved hash="5,16,7219e28fe4e770c1"/>
-<approved hash="19,16,39f0b1bb33c7b624"/>
 <approved hash="19,16,270cab1f292ba930"/>
+<approved hash="19,16,39f0b1bb33c7b624"/>
 <approved hash="19,16,b1d2bd8533b333ec"/>
 <approved hash="5,16,2899a3cfa5e72d41"/>
 <approved hash="19,16,aec6a76929172d10"/>
