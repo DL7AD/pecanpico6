@@ -16,5 +16,7 @@ for weeks. The solar powered PCB can almost stay alive forever.
 
 The source code for the NXP LPC1114 on the board can be found here: https://www.github.com/DL7AD/pecan-lpc11xx
 
+Author: sven.steudte@gmail.com
+
 ![Pecan Pico 6](https://kt5tk.files.wordpress.com/2015/08/dscn7470.jpg?w=800)
 https://kt5tk.files.wordpress.com/2015/08/dscn7470.jpg
